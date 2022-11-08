@@ -30,9 +30,10 @@ public sealed class MongoDbInsensitiveStringContainsHandler : MongoDbStringOpera
         if (parsedValue is string str)
         {
             const string options = "i"; //Case Insensitive
+            BsonRegularExpression bsonRegex = new($"{Regex.Escape(str)}", options);
             var doc = new MongoDbFilterOperation(
                 "$regex",
-                new BsonRegularExpression($"/{Regex.Escape(str)}/", options));
+                bsonRegex);
 
             return new MongoDbFilterOperation(context.GetMongoFilterScope().GetPath(), doc);
         }
