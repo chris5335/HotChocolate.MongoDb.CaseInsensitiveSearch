@@ -22,6 +22,7 @@ public sealed class Query
                 new Person { Name = "Chris" },
                 new Person { Name = "CHRIS" },
                 new Person { Name = "chris" },
+                new Person { Name = "chris Matt" },
             });
         }
         return collection.AsExecutable();

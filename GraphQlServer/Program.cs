@@ -1,6 +1,5 @@
 using GraphQlServer;
 using HotChocolate.Data.Filters;
-using HotChocolate.Data.Filters.Expressions;
 using MongoDB.Driver;
 
 var builder = WebApplication.CreateBuilder(args);

@@ -7,14 +7,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
     <PackageReference Include="HotChocolate.AspNetCore" Version="13.0.0-preview.75" />
     <PackageReference Include="HotChocolate.Data" Version="13.0.0-preview.75" />
     <PackageReference Include="HotChocolate.Data.MongoDb" Version="13.0.0-preview.75" />
-    <PackageReference Include="HotChocolate.Types.Analyzers" Version="13.0.0-preview.75">
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-      <PrivateAssets>all</PrivateAssets>
-    </PackageReference>
     <PackageReference Include="MongoDB.Driver" Version="2.18.0" />
   </ItemGroup>
 
